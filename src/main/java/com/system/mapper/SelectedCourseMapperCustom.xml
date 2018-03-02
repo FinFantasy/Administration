@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.system.mapper.SelectedCourseMapperCustom">
+  <select id="findByPaging" resultType="Selectedcourse">
+    select selectedcourse.*
+    from selectedcourse
+    WHERE courseID = #{id}
+    limit #{pagingVO.startNo}, #{pagingVO.pageSize}
+  </select>
+</mapper>
