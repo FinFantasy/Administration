@@ -111,7 +111,7 @@ public class SelectedCourseServiceImpl implements SelectedCourseService {
     }
 
     @Override
-    public void updataOne(SelectedCourseCustom selectedCourseCustom) throws Exception {
+    public void updateOne(SelectedCourseCustom selectedCourseCustom) throws Exception {
         SelectedcourseExample example = new SelectedcourseExample();
         SelectedcourseExample.Criteria criteria = example.createCriteria();
 
