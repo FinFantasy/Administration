@@ -1,2 +1,12 @@
 # Administration
-Administration
+教务信息管理系统
+采用spring + springmvc + mybatis + shiro实现
+实现功能：
+1. 分为管理员、教师、学生三类身份，各自有相应的操作。
+2. 头像上传
+3. 密文形式保存密码
+4. 密码错误次数限制
+5. 踢出功能，一个帐号不能多处同时登录
+6. 记住我功能
+7. 验证码
+8. 使用ehcache进行缓存
