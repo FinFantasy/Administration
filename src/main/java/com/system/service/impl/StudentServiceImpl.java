@@ -25,7 +25,7 @@ public class StudentServiceImpl implements StudentService {
     private CollegeMapper collegeMapper;
 
     @Override
-    public void updataById(Integer id, StudentCustom studentCustom) throws Exception {
+    public void updateById(Integer id, StudentCustom studentCustom) throws Exception {
         studentMapper.updateByPrimaryKey(studentCustom);
     }
 

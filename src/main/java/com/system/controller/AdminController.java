@@ -114,7 +114,7 @@ public class AdminController {
     @RequestMapping(value = "/editStudent", method = {RequestMethod.POST})
     public String editStudent(StudentCustom studentCustom) throws Exception {
 
-        studentService.updataById(studentCustom.getUserid(), studentCustom);
+        studentService.updateById(studentCustom.getUserid(), studentCustom);
 
         return "redirect:/admin/showStudent";
     }
