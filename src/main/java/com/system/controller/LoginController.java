@@ -23,6 +23,7 @@ public class LoginController {
     @RequestMapping(value = "/login", method = {RequestMethod.GET})
     public String loginUI() throws Exception {
         Subject subject = SecurityUtils.getSubject();
+        System.out.println(subject.hasRole("admin"));
         return RedirectUtil.redirect(subject);
     }
 
